@@ -96,9 +96,10 @@ into it:
         server.address = [
             "unix:native"
         ]
-        pulse.min.req         = 64/48000
-        pulse.default.req     = 64/48000
-        pulse.min.quantum     = 64/48000
+        pulse.min.req      = 32/48000
+        pulse.default.req  = 32/48000
+        pulse.min.quantum  = 32/48000
+        pulse.idle.timeout = 16
         vm.overrides = {
             pulse.min.quantum = 1024/48000
         }
